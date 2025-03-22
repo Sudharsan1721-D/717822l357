@@ -1,0 +1,91 @@
+/* Post Card Styles */
+.post-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    position: relative;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-image {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .post-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #f8f9fa;
+  }
+  
+  .post-user-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+  
+  .post-time {
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  
+  .post-card .card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .post-card .card-text {
+    color: #495057;
+    margin-bottom: 15px;
+  }
+  
+  .post-footer {
+    margin-top: 15px;
+  }
+  
+  .comment-count {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 20px;
+  }
+  
+  .trending-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+  
+  .trending-badge .badge {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feed-container {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
